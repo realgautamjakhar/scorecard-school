@@ -1,0 +1,73 @@
+const data = [
+  {
+    index: 1,
+    title: "Profile",
+    data: " data data data",
+  },
+  {
+    index: 2,
+    title: "Performance",
+    data: "asjkldfhskajdfhskdjf",
+  },
+  {
+    index: 3,
+    title: "Competence",
+    data: "asjkldfhskajdfhskdjf",
+  },
+  {
+    index: 4,
+    title: "Skills",
+    data: "asjkldfhskajdfhskdjf",
+  },
+];
+
+const tabBtns = document.querySelectorAll("#tab-btn");
+const tabContent = document.querySelectorAll("#tab-content");
+
+// Define a callback function to be called when a mutation occurs
+const mutationCallback = (mutationsList, observer) => {
+  for (let mutation of mutationsList) {
+    if (
+      mutation.type === "attributes" &&
+      mutation.attributeName === "aria-selected"
+    ) {
+      const selectedBtn = document.querySelector(
+        "#tab-btn[aria-selected='true']"
+      );
+      const idx = selectedBtn.getAttribute("data-tabIndex");
+      // renderContent(idx);
+      tabContent.forEach((content) => {
+        if (content.getAttribute("data-tab-content") === idx) {
+          content.classList.remove("hidden");
+          content.classList.add("grid");
+        } else {
+          content.classList.remove("grid");
+          content.classList.add("hidden");
+        }
+      });
+    }
+  }
+};
+
+// Create a new MutationObserver and start observing changes to the attributes of the tab buttons
+const observer = new MutationObserver(mutationCallback);
+tabBtns.forEach((btn) => {
+  observer.observe(btn, { attributes: true });
+});
+
+// Add click event listeners to the tab buttons and changing style adding tailwind classes
+tabBtns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    btn.setAttribute("aria-selected", true);
+    btn.classList.remove("bg-gray-200");
+    btn.classList.add("bg-gray-300");
+    tabBtns.forEach((btn2) => {
+      if (btn2 !== e.target) {
+        btn2.classList.remove("bg-gray-300");
+        btn2.classList.add("bg-gray-200");
+        btn2.setAttribute("aria-selected", false);
+      }
+    });
+  });
+});

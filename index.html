@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="pb-10 px-4 md:px-0">
+    <header class="flex justify-between p-4">
+      <h2 class="text-gray-700 font-light">
+        <span class="text-gray-400 font-bold"> StudyCard </span> | MBO
+      </h2>
+      <button class="bg-[#0007C6] font-bold rounded-sm px-6 py-2 text-white">
+        Logout
+      </button>
+    </header>
+
+    <main class="max-w-6xl border-[1px] border-blue-400 w-full mx-auto p-4">
+      <div class="flex flex-col gap-2 items-center justify-center py-6">
+        <img src="/assets/user.jpg" alt="user image" class="rounded-full" />
+        <h2 class="md:text-4xl text-2xl font-bold text-gray-900">
+          Simone Student
+        </h2>
+        <h3 class="text-2xl font-medium text-gray-900">
+          Entrepreneur Catering / Bakery
+        </h3>
+        <p class="text-gray-900">
+          StudyCard - Cook Academy - Vocational - EQF Level 4 - Reference 22179
+        </p>
+        <p class="text-gray-900">(Hospitality)</p>
+        <p class="text-gray-900">Study Year: 2018 - 2022</p>
+      </div>
+      <div class="grid md:grid-cols-5 gap-4">
+        <div class="flex flex-col items-center justify-center">
+          <h2 class="font-bold text-2xl text-gray-900">1</h2>
+          <p class="text-gray-900">Profile</p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <h2 class="font-bold text-2xl text-gray-900">28</h2>
+          <p class="text-gray-900">Performances</p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <h2 class="font-bold text-2xl text-gray-900">200</h2>
+          <p class="text-gray-900">Competencies</p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <h2 class="font-bold text-2xl text-gray-900">128</h2>
+          <p class="text-gray-900">Skills</p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <h2 class="font-bold text-2xl text-gray-900">1</h2>
+          <p class="text-gray-900">Scorecard</p>
+        </div>
+      </div>
+      <div class="h-full w-full mt-10">
+        <div class="grid md:grid-cols-4 w-full gap-4 md:w-fit mx-auto">
+          <button
+            id="tab-btn"
+            data-tabIndex="1"
+            aria-selected="true"
+            class="py-4 px-8 bg-gray-300 w-full"
+          >
+            Profile
+          </button>
+          <button
+            id="tab-btn"
+            data-tabIndex="2"
+            aria-selected="false"
+            class="py-4 px-8 bg-gray-200"
+          >
+            Performances
+          </button>
+          <button
+            id="tab-btn"
+            data-tabIndex="3"
+            aria-selected="false"
+            class="py-4 px-8 bg-gray-200"
+          >
+            Competence
+          </button>
+          <button
+            id="tab-btn"
+            data-tabIndex="4"
+            aria-selected="false"
+            class="py-4 px-8 bg-gray-200"
+          >
+            Skills
+          </button>
+        </div>
+        <div class="tab-content p-4">
+          <div class="grid gap-4" id="tab-content" data-tab-content="1">
+            <h2 class="text-2xl font-bold">Profile</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+              nobis ut dolores veniam asperiores fuga, amet similique earum.
+              Officia aspernatur voluptas ad voluptates ducimus. Odit explicabo
+              est molestiae distinctio doloremque!
+            </p>
+          </div>
+          <div class=" gap-4 hidden" id="tab-content" data-tab-content="2">
+            <h2 class="text-2xl font-bold">PDI</h2>
+            <div class="justify-self-end">
+              <ul class=" flex items-center gap-2 flex-wrap">
+                <li class=" inline-flex gap-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer" viewBox="0 0 16 16">
+                  <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+                  <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+                  </svg>
+                 Print</li>
+                <li class=" inline-flex gap-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer" viewBox="0 0 16 16">
+                    <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+                    <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+                  </svg>
+                  Excel</li>
+                <li class=" inline-flex gap-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-csv" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.517 14.841a1.13 1.13 0 0 0 .401.823c.13.108.289.192.478.252.19.061.411.091.665.091.338 0 .624-.053.859-.158.236-.105.416-.252.539-.44.125-.189.187-.408.187-.656 0-.224-.045-.41-.134-.56a1.001 1.001 0 0 0-.375-.357 2.027 2.027 0 0 0-.566-.21l-.621-.144a.97.97 0 0 1-.404-.176.37.37 0 0 1-.144-.299c0-.156.062-.284.185-.384.125-.101.296-.152.512-.152.143 0 .266.023.37.068a.624.624 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.2-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.551.05-.776.15-.225.099-.4.24-.527.421-.127.182-.19.395-.19.639 0 .201.04.376.122.524.082.149.2.27.352.367.152.095.332.167.539.213l.618.144c.207.049.361.113.463.193a.387.387 0 0 1 .152.326.505.505 0 0 1-.085.29.559.559 0 0 1-.255.193c-.111.047-.249.07-.413.07-.117 0-.223-.013-.32-.04a.838.838 0 0 1-.248-.115.578.578 0 0 1-.255-.384h-.765ZM.806 13.693c0-.248.034-.46.102-.633a.868.868 0 0 1 .302-.399.814.814 0 0 1 .475-.137c.15 0 .283.032.398.097a.7.7 0 0 1 .272.26.85.85 0 0 1 .12.381h.765v-.072a1.33 1.33 0 0 0-.466-.964 1.441 1.441 0 0 0-.489-.272 1.838 1.838 0 0 0-.606-.097c-.356 0-.66.074-.911.223-.25.148-.44.359-.572.632-.13.274-.196.6-.196.979v.498c0 .379.064.704.193.976.131.271.322.48.572.626.25.145.554.217.914.217.293 0 .554-.055.785-.164.23-.11.414-.26.55-.454a1.27 1.27 0 0 0 .226-.674v-.076h-.764a.799.799 0 0 1-.118.363.7.7 0 0 1-.272.25.874.874 0 0 1-.401.087.845.845 0 0 1-.478-.132.833.833 0 0 1-.299-.392 1.699 1.699 0 0 1-.102-.627v-.495Zm8.239 2.238h-.953l-1.338-3.999h.917l.896 3.138h.038l.888-3.138h.879l-1.327 4Z"/>
+                  </svg>
+                  CSV</li>
+                <li class=" inline-flex gap-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+                    <path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1h-.5Z"/>
+                    <path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5Z"/>
+                  </svg>
+                  Copy</li>
+                <li class=" inline-flex gap-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-pdf" viewBox="0 0 16 16">
+                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                    <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"/>
+                  </svg>
+                  PDF</li>
+              </ul>
+            </div>
+            <div class=" flex justify-between items-center flex-wrap gap-2">
+              <h2 class=" font-bold text-gray-900">
+                Show <select  class=" border-b border-gray-300 p-2 font-light">
+                  <option value="1">1</option>
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                  <option value="25">25</option> 
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                  <option value="all" selected>All</option>
+                </select> entries
+              </h2>
+              <div class=" font-bold text-gray-900 inline-flex items-center gap-2">
+                <p>
+                  Search:
+                </p> <input type="text" class="border-b border-gray-300 focus:outline-none max-w-xs w-full" name="search" id="search">
+              </div>
+            </div>
+            <table class=" border-gray-400 border-[1px] p-4  text-sm w-full"  >
+              <thead>
+                <tr>
+                  <th class="text-start p-2 py-4 text-[#333333] w-1/6 "><div class=" inline-flex items-center gap-2">
+                    Performances Name 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                  </div>
+                  </th>
+                  <th class="text-start p-2 py-4 text-[#333333]  w-2/6">
+                    <div class=" inline-flex items-center gap-2">
+                      Descriptor Description
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                    </div></th>
+                  <th class="text-start p-2 py-4 text-[#333333] w-3/6">
+                    <div class=" inline-flex items-center gap-2">
+                      Descriptor Indicator
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class=" bg-[#f5f5f5] hover:bg-gray-200 duration-300 ease-in-out ">
+                  <td class="text-start p-2 text-[#333333] ">Manages the company</td>
+                  <td class="text-start p-2 text-[#333333]">Conducts performance and assessment interviews</td>
+                  <td class="text-start p-2 text-[#333333]">Performance and assessment interviews have been held with employees. Training and development needs and opportunities of the (apprentice) employee have been identified and suggestions and ideas have been put forward. A personal development plan has been drawn up and the results have been incorporated in the personnel file. A decision has been made regarding a change in position or remuneration.</td>
+                </tr>
+                <tr class=" bg-white hover:bg-gray-200 duration-300 ease-in-out">
+                  <td class="text-start p-2 text-[#333333]">Manages the company</td>
+                  <td class="text-start p-2 text-[#333333]">Conducts performance and assessment interviews</td>
+                  <td class="text-start p-2 text-[#333333]">Performance and assessment interviews have been held with employees. Training and development needs and opportunities of the (apprentice) employee have been identified and suggestions and ideas have been put forward. A personal development plan has been drawn up and the results have been incorporated in the personnel file. A decision has been made regarding a change in position or remuneration.</td>
+                </tr>
+                <tr class=" bg-[#f5f5f5] hover:bg-gray-200 duration-300 ease-in-out"> 
+                  <td class="text-start p-2 text-[#333333]">Manages the company</td>
+                  <td class="text-start p-2 text-[#333333]">Conducts performance and assessment interviews</td>
+                  <td class="text-start p-2 text-[#333333]">Performance and assessment interviews have been held with employees. Training and development needs and opportunities of the (apprentice) employee have been identified and suggestions and ideas have been put forward. A personal development plan has been drawn up and the results have been incorporated in the personnel file. A decision has been made regarding a change in position or remuneration.</td>
+                </tr>
+                <tr class=" bg-white hover:bg-gray-200 duration-300 ease-in-out"> 
+                  <td class="text-start p-2 text-[#333333]">Manages the company</td>
+                  <td class="text-start p-2 text-[#333333]">Conducts performance and assessment interviews</td>
+                  <td class="text-start p-2 text-[#333333]">Performance and assessment interviews have been held with employees. Training and development needs and opportunities of the (apprentice) employee have been identified and suggestions and ideas have been put forward. A personal development plan has been drawn up and the results have been incorporated in the personnel file. A decision has been made regarding a change in position or remuneration.</td>
+                </tr>               
+                <tr class=" bg-[#f5f5f5] hover:bg-gray-200 duration-300 ease-in-out"> 
+                  <td class="text-start p-2 text-[#333333]">Manages the company</td>
+                  <td class="text-start p-2 text-[#333333]">Conducts performance and assessment interviews</td>
+                  <td class="text-start p-2 text-[#333333]">Performance and assessment interviews have been held with employees. Training and development needs and opportunities of the (apprentice) employee have been identified and suggestions and ideas have been put forward. A personal development plan has been drawn up and the results have been incorporated in the personnel file. A decision has been made regarding a change in position or remuneration.</td>
+                </tr>
+              </thead>
+            </table>
+            <div class=" flex justify-between items-center">
+              <p class=" text-xs text-gray-700">
+                Showing 1 to 28 of 28 entries
+              </p>
+              <div aria-label="data table pagination">
+                <ul class="inline-flex items-center -space-x-px">
+                  <li>
+                    <a href="#" class="block px-3 py-2 leading-tight text-gray-500  rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">
+                      <span class="sr-only">Previous</span>
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-3 py-2 leading-tight text-gray-500  rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-3 py-2 leading-tight text-gray-500  rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">2</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-3 py-2 leading-tight text-gray-500  rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">3</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-3 py-2 leading-tight text-gray-500  rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">4</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-3 py-2 leading-tight text-gray-500  rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">5</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-3 py-2 leading-tight text-gray-500  rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">6</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-3 py-2 leading-tight text-gray-500  rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">
+                      <span class="sr-only">Next</span>
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" gap-4 hidden" id="tab-content" data-tab-content="3">
+            <h2 class="text-2xl font-bold">Competencies</h2>
+            <div class="justify-self-end">
+              <ul class=" flex items-center gap-2 flex-wrap">
+                <li class=" inline-flex gap-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer" viewBox="0 0 16 16">
+                  <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+                  <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+                  </svg>
+                 Print</li>
+                <li class=" inline-flex gap-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer" viewBox="0 0 16 16">
+                    <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+                    <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+                  </svg>
+                  Excel</li>
+                <li class=" inline-flex gap-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-csv" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.517 14.841a1.13 1.13 0 0 0 .401.823c.13.108.289.192.478.252.19.061.411.091.665.091.338 0 .624-.053.859-.158.236-.105.416-.252.539-.44.125-.189.187-.408.187-.656 0-.224-.045-.41-.134-.56a1.001 1.001 0 0 0-.375-.357 2.027 2.027 0 0 0-.566-.21l-.621-.144a.97.97 0 0 1-.404-.176.37.37 0 0 1-.144-.299c0-.156.062-.284.185-.384.125-.101.296-.152.512-.152.143 0 .266.023.37.068a.624.624 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.2-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.551.05-.776.15-.225.099-.4.24-.527.421-.127.182-.19.395-.19.639 0 .201.04.376.122.524.082.149.2.27.352.367.152.095.332.167.539.213l.618.144c.207.049.361.113.463.193a.387.387 0 0 1 .152.326.505.505 0 0 1-.085.29.559.559 0 0 1-.255.193c-.111.047-.249.07-.413.07-.117 0-.223-.013-.32-.04a.838.838 0 0 1-.248-.115.578.578 0 0 1-.255-.384h-.765ZM.806 13.693c0-.248.034-.46.102-.633a.868.868 0 0 1 .302-.399.814.814 0 0 1 .475-.137c.15 0 .283.032.398.097a.7.7 0 0 1 .272.26.85.85 0 0 1 .12.381h.765v-.072a1.33 1.33 0 0 0-.466-.964 1.441 1.441 0 0 0-.489-.272 1.838 1.838 0 0 0-.606-.097c-.356 0-.66.074-.911.223-.25.148-.44.359-.572.632-.13.274-.196.6-.196.979v.498c0 .379.064.704.193.976.131.271.322.48.572.626.25.145.554.217.914.217.293 0 .554-.055.785-.164.23-.11.414-.26.55-.454a1.27 1.27 0 0 0 .226-.674v-.076h-.764a.799.799 0 0 1-.118.363.7.7 0 0 1-.272.25.874.874 0 0 1-.401.087.845.845 0 0 1-.478-.132.833.833 0 0 1-.299-.392 1.699 1.699 0 0 1-.102-.627v-.495Zm8.239 2.238h-.953l-1.338-3.999h.917l.896 3.138h.038l.888-3.138h.879l-1.327 4Z"/>
+                  </svg>
+                  CSV</li>
+                <li class=" inline-flex gap-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+                    <path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1h-.5Z"/>
+                    <path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5Z"/>
+                  </svg>
+                  Copy</li>
+                <li class=" inline-flex gap-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-pdf" viewBox="0 0 16 16">
+                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                    <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"/>
+                  </svg>
+                  PDF</li>
+              </ul>
+            </div>
+            <div class=" flex justify-between items-center flex-wrap gap-2">
+              <h2 class=" font-bold text-gray-900">
+                Show <select  class=" border-b border-gray-300 p-2 font-light">
+                  <option value="1">1</option>
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                  <option value="25">25</option> 
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                  <option value="all" selected>All</option>
+                </select> entries
+              </h2>
+              <div class=" font-bold text-gray-900 inline-flex items-center gap-2">
+                <p>
+                  Search:
+                </p> <input type="text" class="border-b border-gray-300 focus:outline-none max-w-xs w-full" name="search" id="search">
+              </div>
+            </div>
+            <table class=" border-gray-400 border-[1px] p-4  text-sm w-full border-collapse">
+              <thead>
+                <tr>
+                  <th class="text-start p-2 py-4 text-[#333333] w-1/6  ">
+                    <div class=" inline-flex items-center gap-2">
+                      Competence Name 
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                    </div>
+                    </th>
+                  <th class="text-start p-2 py-4 text-[#333333]  w-2/6 ">
+                    <div class=" inline-flex items-center gap-2">
+                      Competence Indicator
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                    </div>
+                  </th>
+                  <th class="text-start p-2 py-4 text-[#333333]  w-3/6">
+                    <div class=" inline-flex items-center gap-2">
+                      Competence Name
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class=" bg-[#f5f5f5] hover:bg-gray-200 duration-300 ease-in-out ">
+                  <td class="text-start p-2 text-[#333333] ">Analyzing</td>
+                  <td class="text-start p-2 text-[#333333] ">Checks the stock in the sales area or warehouse for deviations and quantities, so that he can identify shortages and deviations in the quality of products.</td>
+                  <td class="text-start p-2 text-[#333333]">Checking data and testing assumptions</td>
+                </tr>
+                <tr class=" bg-white hover:bg-gray-200 duration-300 ease-in-out ">
+                  <td class="text-start p-2 text-[#333333] ">Analyzing</td>
+                  <td class="text-start p-2 text-[#333333]">Checks the stock in the sales area or warehouse for deviations and quantities, so that he can identify shortages and deviations in the quality of products.</td>
+                  <td class="text-start p-2 text-[#333333]">Checking data and testing assumptions</td>
+                </tr>
+                <tr class=" bg-[#f5f5f5] hover:bg-gray-200 duration-300 ease-in-out ">
+                  <td class="text-start p-2 text-[#333333] ">Analyzing</td>
+                  <td class="text-start p-2 text-[#333333]">Checks the stock in the sales area or warehouse for deviations and quantities, so that he can identify shortages and deviations in the quality of products.</td>
+                  <td class="text-start p-2 text-[#333333]">Checking data and testing assumptions</td>
+                </tr>
+                <tr class=" bg-white hover:bg-gray-200 duration-300 ease-in-out ">
+                  <td class="text-start p-2 text-[#333333] ">Analyzing</td>
+                  <td class="text-start p-2 text-[#333333]">Checks the stock in the sales area or warehouse for deviations and quantities, so that he can identify shortages and deviations in the quality of products.</td>
+                  <td class="text-start p-2 text-[#333333]">Checking data and testing assumptions</td>
+                </tr>
+                <tr class=" bg-[#f5f5f5] hover:bg-gray-200 duration-300 ease-in-out ">
+                  <td class="text-start p-2 text-[#333333] ">Analyzing</td>
+                  <td class="text-start p-2 text-[#333333]">Checks the stock in the sales area or warehouse for deviations and quantities, so that he can identify shortages and deviations in the quality of products.</td>
+                  <td class="text-start p-2 text-[#333333]">Checking data and testing assumptions</td>
+                </tr>
+                <tr class=" bg-white hover:bg-gray-200 duration-300 ease-in-out ">
+                  <td class="text-start p-2 text-[#333333] ">Analyzing</td>
+                  <td class="text-start p-2 text-[#333333]">Checks the stock in the sales area or warehouse for deviations and quantities, so that he can identify shortages and deviations in the quality of products.</td>
+                  <td class="text-start p-2 text-[#333333]">Checking data and testing assumptions</td>
+                </tr>
+              </thead>
+            </table>
+            <div class=" flex justify-between items-center">
+              <p class=" text-xs text-gray-700">
+                Showing 1 to 28 of 28 entries
+              </p>
+              <div aria-label="data table pagination">
+                <ul class="inline-flex items-center -space-x-px">
+                  <li>
+                    <a href="#" class="block px-3 py-2 leading-tight text-gray-500  rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">
+                      <span class="sr-only">Previous</span>
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-3 py-2 leading-tight text-gray-500  rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-3 py-2 leading-tight text-gray-500  rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">2</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-3 py-2 leading-tight text-gray-500  rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">3</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-3 py-2 leading-tight text-gray-500  rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">4</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-3 py-2 leading-tight text-gray-500  rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">5</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-3 py-2 leading-tight text-gray-500  rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">6</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-3 py-2 leading-tight text-gray-500  rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">
+                      <span class="sr-only">Next</span>
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" gap-4 hidden" id="tab-content" data-tab-content="4">
+            <h2 class="text-2xl font-bold">Skills</h2>
+            <div class="justify-self-end">
+              <ul class=" flex items-center gap-2 flex-wrap">
+                <li class=" inline-flex gap-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer" viewBox="0 0 16 16">
+                  <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+                  <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+                  </svg>
+                 Print</li>
+                <li class=" inline-flex gap-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer" viewBox="0 0 16 16">
+                    <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+                    <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+                  </svg>
+                  Excel</li>
+                <li class=" inline-flex gap-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-csv" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.517 14.841a1.13 1.13 0 0 0 .401.823c.13.108.289.192.478.252.19.061.411.091.665.091.338 0 .624-.053.859-.158.236-.105.416-.252.539-.44.125-.189.187-.408.187-.656 0-.224-.045-.41-.134-.56a1.001 1.001 0 0 0-.375-.357 2.027 2.027 0 0 0-.566-.21l-.621-.144a.97.97 0 0 1-.404-.176.37.37 0 0 1-.144-.299c0-.156.062-.284.185-.384.125-.101.296-.152.512-.152.143 0 .266.023.37.068a.624.624 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.2-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.551.05-.776.15-.225.099-.4.24-.527.421-.127.182-.19.395-.19.639 0 .201.04.376.122.524.082.149.2.27.352.367.152.095.332.167.539.213l.618.144c.207.049.361.113.463.193a.387.387 0 0 1 .152.326.505.505 0 0 1-.085.29.559.559 0 0 1-.255.193c-.111.047-.249.07-.413.07-.117 0-.223-.013-.32-.04a.838.838 0 0 1-.248-.115.578.578 0 0 1-.255-.384h-.765ZM.806 13.693c0-.248.034-.46.102-.633a.868.868 0 0 1 .302-.399.814.814 0 0 1 .475-.137c.15 0 .283.032.398.097a.7.7 0 0 1 .272.26.85.85 0 0 1 .12.381h.765v-.072a1.33 1.33 0 0 0-.466-.964 1.441 1.441 0 0 0-.489-.272 1.838 1.838 0 0 0-.606-.097c-.356 0-.66.074-.911.223-.25.148-.44.359-.572.632-.13.274-.196.6-.196.979v.498c0 .379.064.704.193.976.131.271.322.48.572.626.25.145.554.217.914.217.293 0 .554-.055.785-.164.23-.11.414-.26.55-.454a1.27 1.27 0 0 0 .226-.674v-.076h-.764a.799.799 0 0 1-.118.363.7.7 0 0 1-.272.25.874.874 0 0 1-.401.087.845.845 0 0 1-.478-.132.833.833 0 0 1-.299-.392 1.699 1.699 0 0 1-.102-.627v-.495Zm8.239 2.238h-.953l-1.338-3.999h.917l.896 3.138h.038l.888-3.138h.879l-1.327 4Z"/>
+                  </svg>
+                  CSV</li>
+                <li class=" inline-flex gap-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+                    <path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1h-.5Z"/>
+                    <path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5Z"/>
+                  </svg>
+                  Copy</li>
+                <li class=" inline-flex gap-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-pdf" viewBox="0 0 16 16">
+                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                    <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"/>
+                  </svg>
+                  PDF</li>
+              </ul>
+            </div>
+            <div class=" flex justify-between items-center flex-wrap gap-2">
+              <h2 class=" font-bold text-gray-900">
+                Show <select  class=" border-b border-gray-300 p-2 font-light">
+                  <option value="1">1</option>
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                  <option value="25">25</option> 
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                  <option value="all" selected>All</option>
+                </select> entries
+              </h2>
+              <div class=" font-bold text-gray-900 inline-flex items-center gap-2">
+                <p>
+                  Search:
+                </p> <input type="text" class="border-b border-gray-300 focus:outline-none max-w-xs w-full" name="search" id="search">
+              </div>
+            </div>
+            <table class=" border-gray-400 border-[1px] p-4  text-sm">
+              <thead>
+                <tr>
+                  <th class="text-start p-2 text-[#333333]  ">
+                    <div class=" inline-flex items-center gap-2">
+                      Analysis Methods
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                    </div></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class=" bg-[#f5f5f5] hover:bg-gray-200 duration-300 ease-in-out ">
+                  <td class="text-start p-2 text-[#333333] ">2e Mvt: Listen</td>
+                </tr>
+                <tr class=" bg-white hover:bg-gray-200 duration-300 ease-in-out">
+                  <td class="text-start p-2 text-[#333333] ">2e Mvt: Listen</td>
+                </tr>
+                <tr class=" bg-[#f5f5f5] hover:bg-gray-200 duration-300 ease-in-out"> 
+                  <td class="text-start p-2 text-[#333333] ">2e Mvt: Listen</td>
+                </tr>
+                <tr class=" bg-white hover:bg-gray-200 duration-300 ease-in-out"> 
+                  <td class="text-start p-2 text-[#333333] ">2e Mvt: Listen</td>
+                </tr>               
+                <tr class=" bg-[#f5f5f5] hover:bg-gray-200 duration-300 ease-in-out"> 
+                  <td class="text-start p-2 text-[#333333] ">2e Mvt: Listen</td>
+                </tr>
+              </thead>
+            </table>
+            <div class="flex justify-between items-center">
+              <p class="text-xs text-gray-700">
+                Showing 1 to 28 of 28 entries
+              </p>
+              <div aria-label="data table pagination">
+                <ul class="inline-flex items-center -space-x-px">
+                  <li>
+                    <a href="#" class="block px-3 py-2 leading-tight text-gray-500  rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">
+                      <span class="sr-only">Previous</span>
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-3 py-2 leading-tight text-gray-500  rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-3 py-2 leading-tight text-gray-500  rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">2</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-3 py-2 leading-tight text-gray-500  rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">3</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-3 py-2 leading-tight text-gray-500  rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">4</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-3 py-2 leading-tight text-gray-500  rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">5</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-3 py-2 leading-tight text-gray-500  rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">6</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-3 py-2 leading-tight text-gray-500  rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">
+                      <span class="sr-only">Next</span>
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </main>
+  </body>
+  <script src="main.js"></script>
+</html>
