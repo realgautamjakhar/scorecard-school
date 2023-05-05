@@ -2582,6 +2582,26 @@ video {
   line-height: 1rem;
 }
 
+.odd\:bg-white:nth-child(odd) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.odd\:bg-\[\#f5f5f5\]:nth-child(odd) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+
+.even\:bg-gray-200:nth-child(even) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.even\:bg-white:nth-child(even) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-\[\#e0e0e0\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(224 224 224 / var(--tw-bg-opacity));
@@ -2671,4 +2691,54 @@ video {
       paint-order: markers;
     }
   }
+}
+
+.\[\&\>\#row\]\:first\:bg-red-300:first-child>#row {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
+.\[\&\>\*\]\:even\:bg-red-300:nth-child(even)>* {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
+.\[\&\>tbody\>tr\]\:first\:bg-red-300:first-child>tbody>tr {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
+.\[\&\>tbody\>tr\]\:last\:bg-red-300:last-child>tbody>tr {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
+.\[\&\>tbody\>tr\]\:even\:bg-red-500:nth-child(even)>tbody>tr {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.\[\&\>tr\]\:bg-red-500>tr {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.\[\&\>tr\]\:first\:bg-red-300:first-child>tr {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
+.\[\&\>tr\]\:last\:bg-red-300:last-child>tr {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
+.\[\&\>tr\]\:even\:bg-red-300:nth-child(even)>tr {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
+.\[\&\~\*\]\:even\:bg-red-300:nth-child(even)~* {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
