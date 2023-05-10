@@ -86,25 +86,17 @@
                       placeholder="Voornaam"
                       autocomplete="off"
                     />
-                    <div
+                    <button
+                      onclick="passwordToggle('login-password')"
+                      type="button"
                       class="absolute top-0 w-5 right-4 h-full my-auto flex flex-col items-center justify-center"
                     >
-                      <input
-                        class="hidden"
-                        id="password-toggle"
-                        type="checkbox"
+                      <img
+                        src="/assets/password-eye.svg"
+                        alt="password toggle eye"
+                        class="w-full h-full"
                       />
-                      <label
-                        class="cursor-pointer my-auto h-fit block"
-                        for="password-toggle"
-                      >
-                        <img
-                          src="/assets/password-eye.svg"
-                          alt="password toggle eye"
-                          class="w-full h-full"
-                        />
-                      </label>
-                    </div>
+                    </button>
                   </div>
                 </div>
 
@@ -173,25 +165,22 @@
           <div class="relative">
             <input
               type="password"
+              id="register-password"
               class="border border-gray-300 p-1 px-2 pr-12 rounded-md w-full focus:ring-[#4f15b7] focus:border-[#4f15b7]"
               placeholder="Voornaam"
               autocomplete="off"
             />
-            <div
+            <button
+              onclick="passwordToggle('register-password')"
+              type="button"
               class="absolute top-0 w-5 right-4 h-full my-auto flex flex-col items-center justify-center"
             >
-              <input class="hidden" id="password-toggle" type="checkbox" />
-              <label
-                class="cursor-pointer my-auto h-fit block"
-                for="password-toggle"
-              >
-                <img
-                  src="/assets/password-eye.svg"
-                  alt="password toggle eye"
-                  class="w-full h-full"
-                />
-              </label>
-            </div>
+              <img
+                src="/assets/password-eye.svg"
+                alt="password toggle eye"
+                class="w-full h-full"
+              />
+            </button>
           </div>
 
           <div class="grid md:grid-cols-[65%_auto] gap-6">
@@ -283,4 +272,17 @@
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
   </body>
+
+  <script>
+    function passwordToggle(inputId) {
+      const passwordInput = document.getElementById(inputId);
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        passwordInput.classList.replace("border-gray-300", "border-red-300");
+      } else {
+        passwordInput.type = "password";
+        passwordInput.classList.replace("border-red-300", "border-gray-300");
+      }
+    }
+  </script>
 </html>
